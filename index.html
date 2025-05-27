@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Universo de Publificción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .modal-body {
+            text-align: center;
+            padding: 2rem;
+        }
+        .construction-icon {
+            font-size: 4rem;
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">El Universo de Publificción</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="text-center py-5 bg-white">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Creamos Experiencias Únicas</h1>
+            <p class="lead">Explora nuestro universo y descubre nuestros proyectos creativos y significativos.</p>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Sobre Nosotros</h2>
+            <p>Nuestra misión es conectar con las personas a través de la creatividad y la innovación en diferentes medios, ofreciendo experiencias memorables.</p>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Proyectos</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Aparecium - Experiencias turísticas">
+                        <div class="card-body">
+                            <h5 class="card-title">Aparecium</h5>
+                            <p class="card-text">Experiencias turísticas únicas e innovadoras.</p>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#constructionModal" class="btn btn-outline-secondary btn-sm">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Toma 5 - Producción audiovisual">
+                        <div class="card-body">
+                            <h5 class="card-title">Toma 5</h5>
+                            <p class="card-text">Producción audiovisual con enfoque innovador.</p>
+                            <a href="https://toma5.es/" target="_blank" class="btn btn-outline-secondary btn-sm">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Publificción - Comunicación creativa">
+                        <div class="card-body">
+                            <h5 class="card-title">Publificción</h5>
+                            <p class="card-text">Comunicación creativa y publicidad auténtica.</p>
+                            <a href="https://publificcion.com/" target="_blank" class="btn btn-outline-secondary btn-sm">Visitar sitio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container text-center">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos en: <a href="mailto:info@universodepublificcion.com">info@universodepublificcion.com</a></p>
+        </div>
+    </section>
+
+    <footer class="py-3 text-center bg-white">
+        <small>&copy; 2024 El Universo de Publificción</small>
+    </footer>
+
+    <!-- Modal de sitio en construcción -->
+    <div class="modal fade" id="constructionModal" tabindex="-1" aria-labelledby="constructionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="constructionModalLabel">Aparecium</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="construction-icon">🚧</div>
+                    <h4>Sitio en Construcción</h4>
+                    <p class="text-muted">Estamos trabajando en crear algo increíble. ¡Vuelve pronto para descubrir nuestras experiencias turísticas únicas!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
