@@ -7,15 +7,26 @@
     <title>El Universo de Publificción</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            --publificcion-yellow: #FFBD00;
+            --publificcion-yellow-light: #FFF4CC;
+            --publificcion-yellow-dark: #CC9600;
+        }
+        
         .card-img-top {
             height: 200px;
-            object-fit: cover;
+            object-fit: contain;
+            background-color: #f8f9fa;
+            padding: 20px;
         }
         .card {
-            transition: transform 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border: 2px solid transparent;
         }
         .card:hover {
             transform: translateY(-5px);
+            border-color: var(--publificcion-yellow);
+            box-shadow: 0 8px 25px rgba(255, 189, 0, 0.3);
         }
         .modal-body {
             text-align: center;
@@ -23,8 +34,37 @@
         }
         .construction-icon {
             font-size: 4rem;
-            color: #ffc107;
+            color: var(--publificcion-yellow);
             margin-bottom: 1rem;
+        }
+        .navbar-brand {
+            color: var(--publificcion-yellow-dark) !important;
+            font-weight: bold;
+        }
+        .btn-outline-secondary {
+            border-color: var(--publificcion-yellow);
+            color: var(--publificcion-yellow-dark);
+        }
+        .btn-outline-secondary:hover {
+            background-color: var(--publificcion-yellow);
+            border-color: var(--publificcion-yellow);
+            color: #000;
+        }
+        .display-5 {
+            color: var(--publificcion-yellow-dark);
+        }
+        h2 {
+            color: var(--publificcion-yellow-dark);
+        }
+        .card-title {
+            color: var(--publificcion-yellow-dark);
+        }
+        .nav-link:hover {
+            color: var(--publificcion-yellow) !important;
+        }
+        /* Elementos con fondo amarillo para destacar */
+        .bg-yellow-accent {
+            background: linear-gradient(135deg, var(--publificcion-yellow-light) 0%, var(--publificcion-yellow) 100%);
         }
     </style>
 </head>
@@ -68,10 +108,10 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Aparecium - Experiencias turísticas">
+                        <img src="images/aparecium-logo.png" class="card-img-top" alt="Aparecium - Eventos y experiencias creativas">
                         <div class="card-body">
                             <h5 class="card-title">Aparecium</h5>
-                            <p class="card-text">Experiencias turísticas únicas e innovadoras.</p>
+                            <p class="card-text">Eventos y experiencias creativas y originales.</p>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#constructionModal" class="btn btn-outline-secondary btn-sm">Visitar sitio</a>
                         </div>
                     </div>
@@ -79,7 +119,7 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Toma 5 - Producción audiovisual">
+                        <img src="images/toma5-logo.png" class="card-img-top" alt="Toma 5 - Producción audiovisual">
                         <div class="card-body">
                             <h5 class="card-title">Toma 5</h5>
                             <p class="card-text">Producción audiovisual con enfoque innovador.</p>
@@ -90,7 +130,7 @@
 
                 <div class="col">
                     <div class="card h-100 shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Publificción - Comunicación creativa">
+                        <img src="images/publificcion-logo.png" class="card-img-top" alt="Publificción - Comunicación creativa">
                         <div class="card-body">
                             <h5 class="card-title">Publificción</h5>
                             <p class="card-text">Comunicación creativa y publicidad auténtica.</p>
